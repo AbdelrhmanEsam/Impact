@@ -12,7 +12,7 @@
       >
         <div class="uk-slider-container uk-light">
           <ul
-            class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-5@xl uk-grid"
+            class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-5@l uk-child-width-1-5@xl uk-grid"
           >
             <li>
               <div class="uk-panel"></div>
@@ -65,7 +65,6 @@
     </div>
   </div>
 </template>
-
 <style lang="scss" scoped>
 @import "../../scss/variables.scss";
 @import "https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css";
@@ -84,10 +83,11 @@
   }
   .header {
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 400;
     line-height: 159px;
     overflow: hidden;
+    font-family: "ArbFONTS-bold" !important;
 
     margin-bottom: 50px;
 
@@ -111,6 +111,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 15px;
+
     .card-header {
       color: white;
       font-size: 25px;
@@ -185,7 +187,7 @@
 @media (max-width: 575.98px) {
   .Our-products {
     .header {
-      font-size: 20px;
+      font-size: 25px;
       &::before {
         right: 15%;
       }
@@ -195,7 +197,7 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
   .Our-products {
     .header {
-      font-size: 35px;
+      font-size: 30px;
       &::before {
         right: 35%;
       }

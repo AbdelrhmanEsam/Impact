@@ -75,16 +75,17 @@
   height: auto;
   margin: 0px auto;
 
-  padding: 50px;
+  padding: 50px 0px;
   .header-section {
     @include header-section;
   }
   .header {
     color: #233a76;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 400;
-
+    font-family: "ArbFONTS-bold" !important;
     width: 50%;
+    margin-top: 50px;
     margin-bottom: 100px;
 
     position: relative;

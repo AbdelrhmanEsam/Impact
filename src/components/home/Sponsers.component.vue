@@ -137,7 +137,6 @@
     </div>
   </div>
 </template>
-
 <style lang="scss" scoped>
 @import "../../scss/variables.scss";
 @import "https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css";
@@ -159,6 +158,7 @@
     font-weight: 400;
     line-height: 159px;
     overflow: hidden;
+    font-family: "ArbFONTS-bold" !important;
 
     margin-bottom: 50px;
 

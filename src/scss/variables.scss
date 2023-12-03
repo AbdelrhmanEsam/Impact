@@ -1,24 +1,12 @@
-@font-face {
-  font-family: "Bahij TheSansArabic Plain";
-  src: url("https://db.onlinewebfonts.com/t/a85976799f11330f194b1dc04c954666.eot");
-  src: url("https://db.onlinewebfonts.com/t/a85976799f11330f194b1dc04c954666.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/a85976799f11330f194b1dc04c954666.woff2")
-      format("woff2"),
-    url("https://db.onlinewebfonts.com/t/a85976799f11330f194b1dc04c954666.woff")
-      format("woff"),
-    url("https://db.onlinewebfonts.com/t/a85976799f11330f194b1dc04c954666.ttf")
-      format("truetype"),
-    url("https://db.onlinewebfonts.com/t/a85976799f11330f194b1dc04c954666.svg#Bahij TheSansArabic Plain")
-      format("svg");
-}
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap");
 
-$font-family: "Bahij TheSansArabic Plain";
+@font-face {
+  font-family: "ArbFONTS";
+  src: url("~@/assets/fonts/ArbFONTS-FFShamelFamily-SansOneBook.woff")
+    format("woff");
+}
+$font-family: "ArbFONTS" !important;
+// $font-family: Cairo !important;
 $main-color: #09bab5;
 $main-bg-color: #0b0a31;
 $main-color-alt: #e56299;
@@ -28,7 +16,7 @@ $section-background: #fff;
 @mixin header-section {
   background: #ffaccf;
   border-radius: 50px;
-  padding: 5px;
+  padding: 10px 5px;
   width: 150px;
   height: 40px;
   text-align: center;
@@ -43,8 +31,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: $font-family !important;
-  // height: 2500px;
+  font-family: "ArbFONTS", Cairo;
 }
 a {
   text-decoration: none;

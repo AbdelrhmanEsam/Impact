@@ -103,6 +103,7 @@
         position: relative;
         right: 80%;
         top: 90px;
+        font-family: "ArbFONTS-bold" !important;
 
         &::before {
           content: url(../../assets/shape.svg);
@@ -116,10 +117,12 @@
     .about-text {
       width: 60%;
       padding: 50px;
+      margin-top: 50px;
+
       p {
         color: white;
         font-size: 20px;
-        font-family: Cairo;
+        font-family: "ArbFONTS", Cairo;
         font-weight: 400;
         line-height: 39.5px;
         text-align: justify;
@@ -160,7 +163,6 @@
       p {
         color: white;
         font-size: 20px;
-        // font-family: FF Shamel Family;
         font-weight: 400;
         line-height: 39.5px;
       }
@@ -207,7 +209,7 @@
     }
     .about-text {
       width: 100% !important;
-      margin-top: 80px;
+      margin-top: 80px !important;
       padding: 0px !important;
     }
   }
@@ -235,7 +237,7 @@
     }
     .about-text {
       width: 100% !important;
-      margin-top: 80px;
+      margin-top: 80px !important;
       padding: 0px !important;
     }
   }
@@ -246,42 +248,47 @@
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .about-impact {
-    display: flex;
     align-items: center;
-
     .about-img {
       width: 60% !important;
-      height: 80% !important;
+      height: 70% !important;
       img {
         width: 100%;
         height: 100% !important;
       }
       .about-header h1 {
-        color: white;
         font-size: 50px;
         font-weight: 600;
-        position: relative;
-        right: 5% !important;
+        // position: relative;
+        right: 50% !important;
         top: -30px !important;
         &::before {
-          left: 30px !important;
+          left: 0px !important;
         }
       }
     }
     .about-text {
-      width: 40%;
-      margin: 100px 20px !important;
+      width: 50%;
+      margin: 180px 20px 0px !important;
       padding: 50px 0px !important;
-
       align-items: center;
-      // background-color: #ffffff80;
     }
   }
 }
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 992px) and (max-width: 1399.98px) {
   .about {
+    .about-header h1 {
+      font-size: 50px;
+      width: max-content;
+      top: 40px !important;
+      &::before {
+        left: 10% !important;
+      }
+    }
     .about-text {
       padding: 50px;
+      width: 70% !important;
+      margin-top: 150px !important;
     }
     .about-img {
       img {
@@ -291,8 +298,12 @@
     }
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1400px) and (max-width: 1900px) {
   .about {
+    .about-text {
+      width: 70% !important;
+      margin-top: 150px !important;
+    }
     .about-img {
       width: 90%;
     }

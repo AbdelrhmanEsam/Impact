@@ -21,15 +21,10 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap");
-
 body {
   height: auto;
   position: relative;
   overflow-x: hidden;
-}
-* {
-  font-family: "Bahij";
 }
 
 .container {

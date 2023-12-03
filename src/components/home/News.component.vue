@@ -1,8 +1,8 @@
 <template>
-  <div class="mews">
+  <div class="news">
     <div class="container">
       <div class="row">
-        <div class="col-xxl-6 col-xl-12">
+        <div class="col-xl-4 col-md-12">
           <div class="news-text">
             <p class="header-section">الأخبار</p>
             <h1 class="header">اخبار تأثير +</h1>
@@ -17,7 +17,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xxl-6 col-xl-12">
+        <div class="col-xl-8 col-md-12">
           <div class="news-imgs">
             <div class="card">
               <img src="../../assets/child.png" alt="" />
@@ -57,12 +57,11 @@
     </div>
   </div>
 </template>
-
 <style lang="scss" scoped>
-@import "https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css";
 @import "../../scss/variables.scss";
+@import "https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css";
 
-.mews {
+.news {
   width: 100%;
   background: linear-gradient(2deg, #430e44 0%, #120325 59%, #0b0735 100%);
   padding: 100px 0px;
@@ -78,6 +77,7 @@
       color: white;
       font-size: 50px;
       font-weight: 400;
+      font-family: "ArbFONTS-bold" !important;
 
       padding: 50px 0px;
       margin-bottom: 50px;
@@ -98,7 +98,7 @@
       font-weight: 400;
       line-height: 39.5px;
       letter-spacing: 1px;
-      width: 60%;
+      // width: 60%;
       margin-bottom: 50px;
     }
     .go-with-us {
@@ -169,7 +169,7 @@
 }
 
 @media (max-width: 575.98px) {
-  .mews {
+  .news {
     padding: 50px 0px;
 
     .news-text {
@@ -200,7 +200,7 @@
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .mews {
+  .news {
     padding: 50px 0px;
 
     .news-text {
@@ -232,18 +232,18 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
 }
 @media (min-width: 992px) and (max-width: 1479.98px) {
-  .mews {
+  .news {
     display: flex;
     flex-direction: column;
   }
-  .mews .news-imgs .card .desc {
+  .news .news-imgs .card .desc {
     padding: 10px;
   }
 }
 @media (min-width: 1480px) and (max-width: 1900px) {
-  .mews {
+  .news {
   }
-  .mews .news-imgs .card .desc {
+  .news .news-imgs .card .desc {
     padding: 10px;
   }
 }
@@ -251,6 +251,6 @@
 
 <script>
 export default {
-  name: "mewssComponent",
+  name: "newssComponent",
 };
 </script>

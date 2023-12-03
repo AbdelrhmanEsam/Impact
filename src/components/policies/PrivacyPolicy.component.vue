@@ -159,8 +159,7 @@
   </section>
 </template>
 
-<style lang="scss" scoped>
-@import "../../scss/variables.scss";
+<style lang="scss" scoped src="../../scss/variables.scss">
 .info {
   width: 100%;
   background-color: rgba(250, 235, 215, 0.245);

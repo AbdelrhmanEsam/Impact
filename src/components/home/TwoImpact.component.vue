@@ -1,7 +1,5 @@
 <template>
   <section class="two-impact">
-    <!-- <div class="row">
-      <div class="col-6 col-sm-12"> -->
     <div class="first">
       <div class="text">
         <h1 class="header">نمهد لك الطريق لتجربة فريدة يكون لها تأثير</h1>
@@ -77,6 +75,7 @@
         font-weight: 400;
         line-height: 59px;
         // margin-bottom: 50px;
+        font-family: "ArbFONTS-bold" !important;
 
         position: relative;
         &::before {
@@ -87,11 +86,12 @@
         }
       }
       p {
-        color: white;
+        color: rgba(255, 255, 255, 0.638);
         font-size: 20px;
         font-weight: 200;
         line-height: 39.5px;
         letter-spacing: 1px;
+        width: 75%;
       }
       button {
         background: none;
@@ -130,6 +130,8 @@
         font-weight: 400;
         line-height: 59px;
         // overflow: hidden;
+        font-family: "ArbFONTS-bold" !important;
+
         margin: 50px 0px;
         position: relative;
         &::before {
@@ -156,6 +158,8 @@
           h2 {
             margin: 40px 0px;
             color: white;
+            font-family: "ArbFONTS-bold" !important;
+            font-weight: 200;
 
             &::before {
               content: "";
@@ -172,6 +176,7 @@
             font-size: 17px;
             font-weight: 200;
             line-height: 23.5px;
+            font-family: "ArbFONTS-bold" !important;
           }
         }
       }
@@ -229,6 +234,12 @@
               &::before {
                 top: 75px;
               }
+            }
+            p {
+              color: #ffffffa0;
+              font-size: 18px;
+              font-weight: 100 !important;
+              font-family: $font-family;
             }
           }
         }

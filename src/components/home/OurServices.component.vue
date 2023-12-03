@@ -11,7 +11,7 @@
             uk-slider
           >
             <ul
-              class="uk-slider-items uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-3@l uk-child-width-1-4@xl uk-grid"
+              class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-4@xl uk-grid"
             >
               <li>
                 <div class="uk-panel">
@@ -101,7 +101,7 @@
             uk-slider
           >
             <ul
-              class="uk-slider-items uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-3@l uk-child-width-1-4@xl uk-grid"
+              class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-4@xl uk-grid"
             >
               <li>
                 <div class="uk-panel">
@@ -180,13 +180,12 @@
       </div>
 
       <div class="go-with-us">
-        <p>نظم فعاليتك معنا</p>
+        <p>اطلب خدماتنا</p>
         <img src="../../assets/white-left.svg" />
       </div>
     </div>
   </section>
 </template>
-
 <style lang="scss" scoped>
 @import "../../scss/variables.scss";
 @import "https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css";
@@ -208,6 +207,7 @@
     font-weight: 400;
     line-height: 159px;
     overflow: hidden;
+    font-family: "ArbFONTS-bold" !important;
 
     position: relative;
     &::before {
@@ -221,11 +221,12 @@
   .cards {
     width: 100%;
     margin-top: 50px;
+    // justify-content: ``;
     .card {
-      padding: 20px 70px;
+      padding: 20px;
       background: none;
-      height: 510px;
-
+      height: 500px;
+      justify-content: center;
       border-width: 2px;
       border-style: solid;
       border-image-source: linear-gradient(
@@ -246,7 +247,7 @@
         font-size: 22px;
         font-weight: 700;
         line-height: 30px;
-        margin: auto 0px;
+        // margin: auto 0px;
         padding: 10px 0px 10px 10px !important;
         background: none;
         border: none;
@@ -263,6 +264,7 @@
     .card.active {
       background-image: url(../../assets/bus-pic.jpg) !important;
       background-position: bottom;
+      min-height: 400px;
 
       background-size: cover;
       .card-header {
@@ -290,30 +292,38 @@
 }
 @media (max-width: 575.98px) {
   .our-services .header {
-    font-size: 40px;
+    font-size: 30px;
   }
   .card {
     padding: 70px 20px !important;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .our-services .header {
+    font-size: 35px;
+  }
   .cards {
     .card {
-      height: 400px !important;
+      height: 500px !important;
+      padding: 20px 10px !important;
     }
   }
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .cards {
     .card {
-      height: 400px !important;
+      height: 500px !important;
+      padding: 20px !important;
     }
   }
 }
-@media (min-width: 992px) and (max-width: 1399.98px) {
+@media (min-width: 1200px) and (max-width: 1399.98px) {
   .cards {
     .card {
-      padding: 50px 30px !important;
+      min-height: 600px !important;
+      width: 230px !important;
+      width: 100%;
+      padding: 20px !important;
     }
   }
 }
@@ -327,13 +337,7 @@
 </style>
 
 <script>
-import WOW from "wow.js"; // Import wow.js if it's not already included
-
 export default {
-  mounted() {
-    new WOW().init();
-  },
-
   name: "OurservicesComponent",
 };
 </script>

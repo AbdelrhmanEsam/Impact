@@ -61,11 +61,12 @@
     </div>
   </div>
 </template>
-
 <style lang="scss" scoped>
-@import "../../scss/variables.scss";
+@import "../..//scss/variables.scss";
+@import "../../scss/fonts.scss";
 
 .navbar-bg {
+  font-family: $font-family;
   direction: rtl;
   width: 100%;
   position: absolute;
@@ -74,6 +75,7 @@
   padding-bottom: 5px;
   clear: both;
   // background-color: #0c0632;
+  box-shadow: 0 0 2px (#aeaeae);
 
   .navbar {
     padding: 10px 0px 0px;
@@ -87,7 +89,7 @@
       padding: 10px 0px;
     }
     ul li {
-      font-family: $font-family;
+      font-family: "ArbFONTS";
       margin: 0px 15px;
       a {
         color: white;
@@ -112,6 +114,9 @@
       margin: 7px;
       color: white;
       width: 200px;
+      span {
+        margin: 5px 0px;
+      }
       img {
         margin: 0px !important;
         padding: 0px !important;

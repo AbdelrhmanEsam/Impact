@@ -51,19 +51,18 @@
           </li>
         </ul>
       </div>
-      <!-- <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul> -->
+      <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
 
-      <ul class="lists">
+      <!-- <ul class="lists">
         <li class="btns"></li>
         <li class="active"></li>
-      </ul>
+      </ul> -->
     </div>
   </div>
 </template>
-
 <style lang="scss" scoped>
-@import "https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css";
 @import "../../scss/variables.scss";
+@import "https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css";
 
 .work {
   // min-height: 800px;
@@ -84,6 +83,7 @@
     font-weight: 400;
     line-height: 159px;
     overflow: hidden;
+    font-family: "ArbFONTS-bold" !important;
 
     margin-bottom: 50px;
 

@@ -36,15 +36,13 @@
     </div>
   </footer>
 </template>
-
 <style lang="scss" scoped>
 @import "../../scss/variables.scss";
 
 footer {
   background-color: $main-bg-color;
   width: 100%;
-  // height: auto;
-  // position: absolute;
+
   bottom: 0 !important;
   text-align: center;
 
@@ -57,6 +55,7 @@ footer {
       font-weight: 400;
       line-height: 93px;
       word-wrap: break-word;
+      font-family: "ArbFONTS-bold" !important;
     }
     img {
       width: 200px;
@@ -137,7 +136,9 @@ footer {
 
 @media (max-width: 575.98px) {
   .head-footer {
-    padding: 50px 20px !important;
+    padding: 70px 20px !important;
+    width: 80% !important;
+    margin: auto;
     h1 {
       line-height: 50px !important;
     }

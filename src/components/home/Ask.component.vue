@@ -165,8 +165,8 @@
 </template>
 
 <style lang="scss" scoped>
-@import "https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css";
 @import "../../scss/variables.scss";
+@import "https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css";
 
 .ask {
   clear: both;
@@ -185,6 +185,7 @@
     font-weight: 400;
     line-height: 159px;
     overflow: hidden;
+    font-family: "ArbFONTS-bold" !important;
 
     margin-bottom: 50px;
 
@@ -301,9 +302,9 @@
 @media (max-width: 575.98px) {
   .ask {
     .header {
-      font-size: 40px;
+      font-size: 35px;
       &::before {
-        right: 25%;
+        right: 5%;
         margin: auto;
       }
     }
@@ -321,6 +322,7 @@
       justify-content: end;
       margin-top: 50px;
       color: white;
+      width: max-content;
       span {
         margin: 5px 0px;
         font-size: 14px;
@@ -328,7 +330,7 @@
       .go-with-us {
         display: flex;
         margin: 0px 20px;
-        width: 130px;
+        width: inherit;
         height: 100px;
         p {
           color: $main-color-alt !important;
