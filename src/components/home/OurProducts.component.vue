@@ -1,5 +1,5 @@
 <template>
-  <div class="Our-products">
+  <div class="Our-products" id="our-products">
     <p class="header-section wow animate__animated animate__bounceIn">
       أعمالنا
     </p>

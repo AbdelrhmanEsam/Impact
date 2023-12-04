@@ -1,5 +1,5 @@
 <template>
-  <div class="news">
+  <div class="news" id="news">
     <div class="container">
       <div class="row">
         <div class="col-xl-4 col-md-12">

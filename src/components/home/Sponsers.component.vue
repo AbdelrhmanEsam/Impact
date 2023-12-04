@@ -1,5 +1,5 @@
 <template>
-  <div class="sponser">
+  <div class="sponser" id="sponsers">
     <p class="header-section wow animate__animated animate__bounceIn">
       شركاؤنا
     </p>

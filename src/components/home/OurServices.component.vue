@@ -265,6 +265,22 @@
         margin: 15px 0px;
         // text-align: justify;
       }
+      &:hover {
+        background-image: url(../../assets/bus-pic.jpg) !important;
+        background-position: bottom;
+        min-height: 400px;
+        transition: $main-transition ease-in-out;
+        background-size: cover;
+        .card-icon {
+          filter: brightness(350);
+        }
+        .card-header {
+          color: #ffffff;
+        }
+        .card-desc {
+          color: #ffffff;
+        }
+      }
     }
     .card.active {
       background-image: url(../../assets/bus-pic.jpg) !important;
@@ -272,6 +288,9 @@
       min-height: 400px;
 
       background-size: cover;
+      .card-icon {
+        filter: brightness(-350);
+      }
       .card-header {
         color: #ffffff;
       }

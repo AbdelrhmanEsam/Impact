@@ -28,19 +28,19 @@
               </router-link>
             </li>
             <li>
-              <router-link to="/" class="nav-link">خدماتنا</router-link>
+              <a @click="OurServices" class="nav-link">خدماتنا</a>
             </li>
 
             <li>
-              <router-link to="/" class="nav-link"> أعمالنا</router-link>
+              <a @click="OurProducts" class="nav-link"> أعمالنا</a>
             </li>
 
             <li>
-              <router-link to="/" class="nav-link"> عملاؤنا </router-link>
+              <a @click="Sponsers" class="nav-link"> عملاؤنا </a>
             </li>
 
             <li>
-              <router-link to="/" class="nav-link">الأخبار</router-link>
+              <a @click="News" class="nav-link">الأخبار</a>
             </li>
           </ul>
           <div class="whats d-flex col-sm-none" role="button">
@@ -217,6 +217,18 @@ export default {
   methods: {
     handleScroll() {
       this.isScrolled = window.scrollY > 20;
+    },
+    OurServices() {
+      this.$scrollTo("#our-services", 500);
+    },
+    OurProducts() {
+      this.$scrollTo("#our-products", 500);
+    },
+    Sponsers() {
+      this.$scrollTo("#sponsers", 500);
+    },
+    News() {
+      this.$scrollTo("#news", 500);
     },
   },
 };
