@@ -226,10 +226,6 @@
     .about-img {
       width: 100% !important;
       .about-header h1 {
-        color: white;
-        font-size: 50px;
-        font-weight: 600;
-        position: relative;
         right: 50%;
         transform: translate(50%);
         top: 0px !important;

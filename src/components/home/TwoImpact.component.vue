@@ -200,7 +200,9 @@
           margin-bottom: 50px !important;
           &::before {
             top: 120px !important;
-            right: 10% !important;
+            right: 50%;
+            transform: translate(50%);
+
             width: auto !important;
             margin: auto;
           }
@@ -263,9 +265,9 @@
           margin-bottom: 50px !important;
           &::before {
             top: 120px !important;
-            // right: 10% !important;
-            width: auto !important;
-            margin: auto;
+
+            right: 50%;
+            transform: translate(50%);
           }
         }
         p {

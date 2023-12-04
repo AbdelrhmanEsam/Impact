@@ -1,5 +1,5 @@
 <template>
-  <div class="Our-products">
+  <div class="sponser">
     <p class="header-section wow animate__animated animate__bounceIn">
       شركاؤنا
     </p>
@@ -145,7 +145,7 @@
 @import "../../scss/variables.scss";
 @import "https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css";
 
-.Our-products {
+.sponser {
   // min-height: 800px;
   clear: both;
   width: 100%;
@@ -195,11 +195,13 @@
 }
 
 @media (max-width: 575.98px) {
-  .Our-products {
+  .sponser {
     .header {
       font-size: 30px;
       &::before {
-        right: 10%;
+        right: 50%;
+        transform: translate(50%);
+
         margin: auto;
         // width: 100%;
       }
@@ -207,17 +209,18 @@
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .Our-products {
+  .sponser {
     .header {
       font-size: 35px;
       &::before {
-        right: 35%;
+        right: 50%;
+        transform: translate(50%);
       }
     }
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .Our-products {
+  .sponser {
     .header {
       font-size: 35px;
       &::before {
@@ -235,6 +238,6 @@
 
 <script>
 export default {
-  name: "Our-productsComponent",
+  name: "sponserComponent",
 };
 </script>

@@ -205,7 +205,8 @@
     .header {
       font-size: 25px;
       &::before {
-        right: 15%;
+        right: 50%;
+        transform: translate(50%);
       }
     }
   }
@@ -215,7 +216,8 @@
     .header {
       font-size: 30px;
       &::before {
-        right: 35%;
+        right: 50%;
+        transform: translate(50%);
       }
     }
   }

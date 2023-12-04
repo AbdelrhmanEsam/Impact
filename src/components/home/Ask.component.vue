@@ -312,7 +312,7 @@
     .header {
       font-size: 25px;
       &::before {
-        right: 5%;
+        right: 0%;
         margin: auto;
       }
     }
