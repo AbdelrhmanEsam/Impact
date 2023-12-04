@@ -5,12 +5,12 @@
       <div class="row">
         <div class="about-impact">
           <div class="about-img">
-            <div class="about-header">
+            <div class="about-header wow animate__animated animate__bounceIn">
               <h1>عن “تأثير +”</h1>
             </div>
             <img src="../../assets/man-pic.jpg" alt="" />
           </div>
-          <div class="about-text">
+          <div class="about-text wow animate__animated animate__fadeOut">
             <p>
               انطلقت شركة تأثير في مدينة الرياض في مجال تنظيم المعارض والمؤتمرات
               بكوادر بشرية مؤهلة ومتخصصة في مجال الفعاليات وشغوفة في هذا المجال
@@ -24,7 +24,7 @@
       <div class="about-company">
         <div class="row">
           <div class="col-md-6 col-12">
-            <div class="card">
+            <div class="card wow animate__animated animate__bounceInRight">
               <h1 class="header">فلسفة الشركة</h1>
               <p>
                 نسعى الى تحقيق أهدافنا المتمثلة في رفع مستوى المعارض والمؤتمرات
@@ -35,7 +35,7 @@
           </div>
 
           <div class="col-md-6 col-12">
-            <div class="card">
+            <div class="card wow animate__animated animate__bounceInLeft">
               <h1 class="header">رؤية الشركة</h1>
               <p>
                 الريادة في الفعاليات والتسويق المبتكرة والمتجددة وإستخدام
@@ -46,7 +46,7 @@
         </div>
       </div>
 
-      <div class="go-with-us">
+      <div class="go-with-us wow animate__animated animate__bounceInUp">
         <p>نظم فعاليتك معنا</p>
         <img src="../../assets/icon_arrow-left.svg" />
       </div>
@@ -60,7 +60,7 @@
 .about {
   position: relative;
   width: 100%;
-  height: auto !important;
+  // height: 100vh !important;
   background: linear-gradient(85deg, #233a76 0%, #543c97 100%);
   z-index: 1 !important;
 

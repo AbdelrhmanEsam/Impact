@@ -1,12 +1,13 @@
 <template>
-  <div class="navbar-bg">
+  <div
+    :class="[
+      { 'navbar-scrolled': isScrolled },
+      { 'navbar-bg': currentPage === 'Home' },
+    ]"
+  >
     <div class="container">
       <nav class="navbar navbar-expand-lg">
-        <img
-          class="navbar-brand"
-          src="../../assets/logo-impact.svg"
-          alt="logo"
-        />
+        <img class="navbar-brand" src="../../assets/logo-impact.svg" alt="" />
 
         <button
           class="navbar-toggler"
@@ -27,23 +28,19 @@
               </router-link>
             </li>
             <li>
-              <router-link to="/services" class="nav-link">خدماتنا</router-link>
+              <router-link to="/" class="nav-link">خدماتنا</router-link>
             </li>
 
             <li>
-              <router-link to="/about-us" class="nav-link">
-                أعمالنا</router-link
-              >
+              <router-link to="/" class="nav-link"> أعمالنا</router-link>
             </li>
 
             <li>
-              <router-link to="/contact-us" class="nav-link">
-                عملاؤنا
-              </router-link>
+              <router-link to="/" class="nav-link"> عملاؤنا </router-link>
             </li>
 
             <li>
-              <router-link to="/jobs" class="nav-link">الأخبار</router-link>
+              <router-link to="/" class="nav-link">الأخبار</router-link>
             </li>
           </ul>
           <div class="whats d-flex col-sm-none" role="button">
@@ -69,13 +66,14 @@
   font-family: $font-family;
   direction: rtl;
   width: 100%;
-  position: absolute;
   z-index: 1;
   top: 0;
   padding-bottom: 5px;
   clear: both;
-  // background-color: #0c0632;
   box-shadow: 0 0 2px (#aeaeae);
+  position: fixed;
+  transition: background-color 0.3s ease;
+  // background-color: #0c063255;
 
   .navbar {
     padding: 10px 0px 0px;
@@ -97,10 +95,11 @@
     }
     .navbar-nav {
       margin: auto;
+      width: 65%;
     }
   }
   .navbar-toggler {
-    background-color: #00abad6e;
+    background-color: #fff;
     padding: 10px;
     height: fit-content;
   }
@@ -124,11 +123,33 @@
     }
   }
 }
+.navbar-scrolled {
+  background-color: #0c0632;
+  z-index: 1000;
+  padding: 0px;
+  img {
+    // width: 50px;
+    height: 80px;
+  }
 
+  .whats img {
+    width: 50px;
+    height: 30px;
+    border: 1px;
+  }
+}
+.navbar-about {
+  background-color: brown !important;
+}
 @media (max-width: 575.98px) {
   .navbar {
     width: 100%;
     padding: 0px;
+
+    .navbar-nav {
+      margin: auto;
+      width: 100%;
+    }
   }
   .navbar-bg .navbar {
     justify-content: space-between;
@@ -153,6 +174,8 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
   .navbar-bg .navbar {
     justify-content: space-between;
+    align-items: center;
+
     .router-link-exact-active {
       color: $main-color;
       border-bottom: 0px;
@@ -163,10 +186,10 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .navbar-expand-lg .navbar-nav {
     margin: 0;
-    padding: 0%;
+    padding: 3px 0px;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    font-size: 16px !important;
+    font-size: 14px !important;
     margin: 0;
     padding: 0%;
   }
@@ -176,54 +199,25 @@
 </style>
 
 <script>
-// import { logo } from "../../data/images";
 export default {
   name: "NavbarComponent",
+
+  data() {
+    return {
+      isScrolled: false,
+      currentPage: "Home",
+    };
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  mounted() {
+    this.handleScroll();
+  },
+  methods: {
+    handleScroll() {
+      this.isScrolled = window.scrollY > 20;
+    },
+  },
 };
-// data() {
-//   return {
-//     isTaggle: false,
-//     isFixed: false,
-//     logo,
-//   };
-// },
-// methods: {
-//   changeToggel() {
-//     this.isTaggle = !this.isTaggle;
-//   },
-//   navScrole() {
-//     window.onscroll = () => {
-//       let navHeight = window.document.querySelector("nav").offsetHeight;
-//       let scrollY = window.scrollY;
-//       if (scrollY > 500) {
-//         this.isFixed = true;
-//         document.body.setAttribute(
-//           "style",
-//           "padding-top:" + navHeight + "px"
-//         );
-//       } else {
-//         document.body.setAttribute("style", "padding-top:" + 0);
-//         this.isFixed = false;
-//       }
-//     };
-//   },
-//   move(id) {
-//     console.log(id);
-//     let element = document.getElementById(id);
-//     if (!element) {
-//       this.$router.push("/");
-//       setTimeout(() => {
-//         element = document.getElementById(id);
-//         let height = element.offsetTop - 90;
-//         window.scrollTo(0, height);
-//       });
-//     } else {
-//       let height = element.offsetTop - 90;
-//       window.scrollTo(0, height);
-//     }
-//   },
-// },
-// created() {
-//   this.navScrole();
-// },
 </script>

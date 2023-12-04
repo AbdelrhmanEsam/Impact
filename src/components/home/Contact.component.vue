@@ -1,12 +1,18 @@
 <template>
   <section class="content-us">
     <div class="container">
-      <p class="header-section">التواصل</p>
-      <h1 class="header">الطريق نحو المستقبل وجهة نرسمها في تأثير +</h1>
+      <p class="header-section wow animate__animated animate__bounceIn">
+        التواصل
+      </p>
+      <h1 class="header wow animate__animated animate__bounceIn">
+        الطريق نحو المستقبل وجهة نرسمها في تأثير +
+      </h1>
 
       <div class="row">
         <div class="col-12 col-md-6">
-          <div class="content-us-text">
+          <div
+            class="content-us-text wow animate__animated animate__bounceInRight"
+          >
             <form class="row g-3">
               <div class="col-12">
                 <input
@@ -51,7 +57,9 @@
                 </div>
               </div>
               <div class="col-12">
-                <div class="go-with-us">
+                <div
+                  class="go-with-us wow animate__animated animate__bounceInUp"
+                >
                   <p>تواصل معنا</p>
                   <img src="../../assets/icon_arrow-left.svg" />
                 </div>
@@ -59,7 +67,9 @@
             </form>
           </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div
+          class="col-12 col-md-6 wow animate__animated animate__bounceInLeft"
+        >
           <img src="../../assets/map.jpg" />
         </div>
       </div>

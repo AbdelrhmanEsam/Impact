@@ -1,7 +1,11 @@
 <template>
   <div class="Our-products">
-    <p class="header-section">أعمالنا</p>
-    <h1 class="header">حيث تكتمل دائرة الإبداع لتحقق أهدافكم</h1>
+    <p class="header-section wow animate__animated animate__bounceIn">
+      أعمالنا
+    </p>
+    <h1 class="header wow animate__animated animate__bounceIn">
+      حيث تكتمل دائرة الإبداع لتحقق أهدافكم
+    </h1>
 
     <div uk-slider>
       <div
@@ -15,13 +19,19 @@
             class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-5@l uk-child-width-1-5@xl uk-grid"
           >
             <li>
-              <div class="uk-panel"></div>
+              <div
+                class="uk-panel wow animate__animated animate__fadeInLeft"
+              ></div>
             </li>
             <li>
-              <div class="uk-panel"></div>
+              <div
+                class="uk-panel wow animate__animated animate__fadeInLeft"
+              ></div>
             </li>
             <li>
-              <div class="uk-panel active">
+              <div
+                class="uk-panel active wow animate__animated animate__fadeInUp"
+              >
                 <div class="date">
                   <img src="../../assets/icon-calendar.svg" alt="" />
                   <span>10/3/2023</span>
@@ -38,11 +48,15 @@
             </li>
 
             <li>
-              <div class="uk-panel"></div>
+              <div
+                class="uk-panel wow animate__animated animate__fadeInRight"
+              ></div>
             </li>
 
             <li>
-              <div class="uk-panel"></div>
+              <div
+                class="uk-panel wow animate__animated animate__fadeInRight"
+              ></div>
             </li>
           </ul>
         </div>
@@ -71,6 +85,8 @@
 
 .Our-products {
   // min-height: 800px;
+  min-height: 100vh !important;
+
   clear: both;
   width: 100%;
   background-color: #091e66;

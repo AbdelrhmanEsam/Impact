@@ -68,3 +68,8 @@ a,
 a:hover {
   text-decoration: none;
 }
+@media (max-width: 575.98px) {
+  .container {
+    width: 100% !important;
+  }
+}

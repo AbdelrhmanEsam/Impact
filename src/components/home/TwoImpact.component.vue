@@ -1,7 +1,7 @@
 <template>
   <section class="two-impact">
     <div class="first">
-      <div class="text">
+      <div class="text wow animate__animated animate__fadeInUp">
         <h1 class="header">نمهد لك الطريق لتجربة فريدة يكون لها تأثير</h1>
         <p>
           “تأثير +” إحدى الشركات السعودية الرائدة في بناء وتنظيم وتجهيز
@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="sec">
-      <div class="text">
+      <div class="text wow animate__animated animate__fadeInDown">
         <h1 class="header">تعرّف علينا عن قرب</h1>
         <div class="cards">
           <div class="card">
@@ -56,6 +56,8 @@
   background-repeat: round;
   text-align: center;
   display: flex;
+  min-height: 100vh !important;
+
   .first {
     width: 50%;
     background: rgba(26, 26, 26, 0.4) !important;
@@ -189,12 +191,12 @@
 
     .first {
       width: 100% !important;
-      padding: 100px 50px !important;
+      padding: 100px 10px !important;
       .text {
         width: 90% !important;
         justify-content: space-around;
         .header {
-          font-size: 30px !important;
+          font-size: 25px !important;
           margin-bottom: 50px !important;
           &::before {
             top: 120px !important;
@@ -210,12 +212,12 @@
     }
     .sec {
       width: 100% !important;
-      padding: 50px 100px;
+      padding: 50px 20px;
       .text {
         width: 100% !important;
 
         .header {
-          font-size: 25px !important;
+          font-size: 22px !important;
           margin: 0px !important;
           &::before {
             margin: auto;

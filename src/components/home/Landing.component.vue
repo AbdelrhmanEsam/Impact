@@ -2,8 +2,8 @@
   <div class="main">
     <div class="container">
       <div class="desc">
-        <h1 class="first">صناع</h1>
-        <h1 class="sec">الحدث</h1>
+        <h1 class="first wow animate__animated animate__fadeIn">صناع</h1>
+        <h1 class="sec wow animate__animated animate__fadeOut">الحدث</h1>
       </div>
 
       <button class="btn contact-btn">
@@ -197,12 +197,17 @@
 </style>
 
 <script>
+import WOW from "wow.js"; // Import wow.js if it's not already included
+
 export default {
   name: "LandingPageComponent",
   data() {
     return {
       navHeight: 0,
     };
+  },
+  mounted() {
+    new WOW().init();
   },
 };
 </script>

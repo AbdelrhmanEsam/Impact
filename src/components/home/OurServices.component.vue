@@ -1,8 +1,12 @@
 <template>
-  <section class="our-services">
+  <section class="our-services" id="our-services">
     <div class="container">
-      <p class="header-section">خدماتنا</p>
-      <h1 class="header">كل شيء معنا ممكن</h1>
+      <p class="header-section wow animate__animated animate__bounceIn">
+        خدماتنا
+      </p>
+      <h1 class="header wow animate__animated animate__bounceIn">
+        كل شيء معنا ممكن
+      </h1>
       <div class="cards">
         <div uk-slider>
           <div
@@ -11,7 +15,7 @@
             uk-slider
           >
             <ul
-              class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-4@xl uk-grid"
+              class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-4@xl uk-grid wow animate__animated animate__bounceInLeft"
             >
               <li>
                 <div class="uk-panel">
@@ -96,7 +100,7 @@
 
         <div uk-slider>
           <div
-            class="uk-position-relative uk-visible-toggle uk-light mb-5"
+            class="uk-position-relative uk-visible-toggle uk-light mb-5 wow animate__animated animate__bounceInRight"
             tabindex="-1"
             uk-slider
           >
@@ -179,7 +183,7 @@
         </div>
       </div>
 
-      <div class="go-with-us">
+      <div class="go-with-us wow animate__animated animate__bounceInUp">
         <p>اطلب خدماتنا</p>
         <img src="../../assets/white-left.svg" />
       </div>
@@ -194,6 +198,7 @@
   width: 100%;
   clear: both;
   min-height: 850px;
+
   padding: 100px 0px 50px;
   background: linear-gradient(2deg, #430e44 0%, #120325 59%, #0b0735 100%);
   position: relative;
@@ -291,16 +296,18 @@
   }
 }
 @media (max-width: 575.98px) {
-  .our-services .header {
-    font-size: 30px;
+  .our-services h1.header {
+    font-size: 25px !important;
   }
+
   .card {
     padding: 70px 20px !important;
   }
 }
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   .our-services .header {
-    font-size: 35px;
+    font-size: 30px;
   }
   .cards {
     .card {

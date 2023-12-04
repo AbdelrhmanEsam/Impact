@@ -1,8 +1,8 @@
 <template>
   <div class="work">
-    <p class="header-section">لنصل</p>
-    <h1 class="header">كيف نعمل</h1>
-    <p class="header-desc">
+    <p class="header-section wow animate__animated animate__bounceIn">لنصل</p>
+    <h1 class="header wow animate__animated animate__bounceIn">كيف نعمل</h1>
+    <p class="header-desc wow animate__animated animate__fadeIn">
       في عالمٍ سريع التطور أصبح الإبداع صعب الوصول ، تأتي تأثير + لتشاركك
       استراتيجيات العمل لدينا لتأخذ أعمالك إلى وجهات جديدة أكثر إبداعاً وتأثيراً
       .
@@ -15,7 +15,9 @@
       >
         <ul class="uk-slider-items uk-grid uk-grid-match">
           <li class="uk-width-2-5@xl uk-width-2-3@m">
-            <div class="uk-cover-container first">
+            <div
+              class="uk-cover-container first wow animate__animated animate__fadeInLeft"
+            >
               <div class="text">
                 <img src="../../assets/icon-search.svg" alt="" />
                 <h2>مرحلة البحث</h2>
@@ -25,7 +27,9 @@
             </div>
           </li>
           <li class="uk-width-2-5@xl uk-width-2-3@m">
-            <div class="uk-cover-container sec">
+            <div
+              class="uk-cover-container sec wow animate__animated animate__fadeInLeft"
+            >
               <div class="text">
                 <img src="../../assets/work-3.svg" alt="" />
 
@@ -39,7 +43,9 @@
             </div>
           </li>
           <li class="uk-width-2-5@xl uk-width-2-3@m">
-            <div class="uk-cover-container third">
+            <div
+              class="uk-cover-container third wow animate__animated animate__fadeInLeft"
+            >
               <div class="text">
                 <img src="../../assets/shuttle.svg" alt="" />
 
@@ -66,6 +72,8 @@
 
 .work {
   // min-height: 800px;
+  min-height: 100vh !important;
+
   clear: both;
   width: 100%;
   background-color: #0b0a31;
@@ -211,11 +219,17 @@
 }
 
 @media (max-width: 575.98px) {
-  .work .header-desc {
-    width: 90%;
+  .work {
+    padding: 50px 20px;
   }
-  .work .uk-cover-container .text {
-    padding: 25px;
+  .header-desc {
+    width: 90% !important;
+  }
+  .work .uk-cover-container {
+    height: 300px !important;
+    .text {
+      padding: 25px;
+    }
   }
   .work .uk-cover-container.sec .text {
     padding: 20px;

@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="head-footer">
+    <div class="head-footer wow animate__animated animate__bounceIn">
       <h1>كُن معنا ليصلك جديدنا</h1>
       <img src="../../assets/shape.svg" alt="" />
       <p>
@@ -15,7 +15,7 @@
         <input type="text" placeholder="اكتب الإميل الإلكتروني" />
       </div>
     </div>
-    <div class="center-footer">
+    <div class="center-footer wow animate__animated animate__bounceInUp">
       <img class="logo-footer" src="../../assets/logo2mpact.svg" />
       <p>تابع تأثير + على وسائل التواصل الاجتماعي</p>
       <div class="icons">

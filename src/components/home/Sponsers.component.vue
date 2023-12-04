@@ -1,11 +1,15 @@
 <template>
   <div class="Our-products">
-    <p class="header-section">شركاؤنا</p>
-    <h1 class="header">بثقتهم يزدهر الإبداع</h1>
+    <p class="header-section wow animate__animated animate__bounceIn">
+      شركاؤنا
+    </p>
+    <h1 class="header wow animate__animated animate__bounceIn">
+      بثقتهم يزدهر الإبداع
+    </h1>
 
     <div uk-slider>
       <div
-        class="uk-position-relative uk-visible-toggle uk-light mb-5"
+        class="uk-position-relative uk-visible-toggle uk-light mb-5 wow animate__animated animate__fadeInLeft"
         tabindex="-1"
         uk-slider
       >
@@ -70,7 +74,7 @@
 
     <div uk-slider>
       <div
-        class="uk-position-relative uk-visible-toggle uk-light mb-5"
+        class="uk-position-relative uk-visible-toggle uk-light mb-5 wow animate__animated animate__fadeInRight"
         tabindex="-1"
         uk-slider
       >
@@ -148,6 +152,7 @@
   padding: 50px 0px;
   text-align: center;
   overflow: hidden;
+  min-height: 100vh !important;
   .header-section {
     @include header-section;
     margin: auto;
@@ -192,9 +197,9 @@
 @media (max-width: 575.98px) {
   .Our-products {
     .header {
-      font-size: 40px;
+      font-size: 30px;
       &::before {
-        right: 25%;
+        right: 10%;
         margin: auto;
         // width: 100%;
       }

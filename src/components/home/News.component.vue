@@ -4,21 +4,25 @@
       <div class="row">
         <div class="col-xl-4 col-md-12">
           <div class="news-text">
-            <p class="header-section">الأخبار</p>
-            <h1 class="header">اخبار تأثير +</h1>
-            <p class="header-desc">
+            <p class="header-section wow animate__animated animate__bounceIn">
+              الأخبار
+            </p>
+            <h1 class="header wow animate__animated animate__bounceIn">
+              اخبار تأثير +
+            </h1>
+            <p class="header-desc wow animate__animated animate__bounceIn">
               نحيطكم بتفاصيل رحلتنا المُلهمة لتكونوا معنا على اطلاع أول بأول بكل
               ماهو جديد لدينا...
             </p>
 
-            <div class="go-with-us">
+            <div class="go-with-us wow animate__animated animate__bounceInUp">
               <p>المزيد من الأخبار</p>
               <img src="../../assets/icon_arrow-left.svg" />
             </div>
           </div>
         </div>
         <div class="col-xl-8 col-md-12">
-          <div class="news-imgs">
+          <div class="news-imgs wow animate__animated animate__bounceInLeft">
             <div class="card">
               <img src="../../assets/child.png" alt="" />
 
@@ -29,7 +33,9 @@
                   وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه
                   مازال نصاً بديلاً ومؤقتاً.
                 </p>
-                <div class="go-with-us">
+                <div
+                  class="go-with-us wow animate__animated animate__bounceInUp"
+                >
                   <img src="../../assets/icon_arrow-left.svg" />
                   <p>المزيد من الأخبار</p>
                 </div>
@@ -45,7 +51,9 @@
                   وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه
                   مازال نصاً بديلاً ومؤقتاً.
                 </p>
-                <div class="go-with-us">
+                <div
+                  class="go-with-us wow animate__animated animate__bounceInUp"
+                >
                   <img src="../../assets/icon_arrow-left.svg" />
                   <p>المزيد من الأخبار</p>
                 </div>
@@ -66,10 +74,16 @@
   background: linear-gradient(2deg, #430e44 0%, #120325 59%, #0b0735 100%);
   padding: 100px 0px;
   align-content: center;
-  height: 100%;
-
+  // height: 100%;
+  min-height: 100vh !important;
+  display: flex;
+  align-items: center;
   .news-text {
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .header-section {
       @include header-section;
     }
@@ -81,7 +95,7 @@
 
       padding: 50px 0px;
       margin-bottom: 50px;
-      height: 100%;
+      // height: 100%;
       overflow-y: hidden;
       position: relative;
       &::before {

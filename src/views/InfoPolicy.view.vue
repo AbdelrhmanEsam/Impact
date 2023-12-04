@@ -14,6 +14,11 @@ export default {
   components: {
     InfoPolicyComponent,
   },
+  data() {
+    return {
+      currentPage: "InfoPolicy",
+    };
+  },
   created() {
     this.$store.commit("setPage", "contact");
 

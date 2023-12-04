@@ -24,6 +24,7 @@ import SponsersComponent from "@/components/home/Sponsers.component.vue";
 import NewsComponent from "@/components/home/News.component.vue";
 import AskComponent from "@/components/home/Ask.component.vue";
 import ContactComponent from "@/components/home/Contact.component.vue";
+import WOW from "wow.js";
 
 export default {
   name: "HomeView",
@@ -38,6 +39,20 @@ export default {
     NewsComponent,
     AskComponent,
     ContactComponent,
+  },
+
+  created() {
+    this.$store.commit("setPage", "contact");
+
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  },
+
+  mounted() {
+    const wow = new WOW();
+    wow.init();
   },
 };
 </script>

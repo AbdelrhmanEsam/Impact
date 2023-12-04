@@ -22,5 +22,10 @@ export default {
       behavior: "instant",
     });
   },
+  data() {
+    return {
+      currentPage: "PrivacyPolicy",
+    };
+  },
 };
 </script>
