@@ -1,5 +1,7 @@
 <template>
   <div class="home">
+    <Navbare></Navbare>
+
     <LandingComponent></LandingComponent>
     <AboutComponent></AboutComponent>
     <OurServicesComponent></OurServicesComponent>
@@ -14,6 +16,8 @@
 </template>
 
 <script>
+import Navbare from "@/components/layouts/Navbar.vue";
+
 import LandingComponent from "@/components/home/Landing.component.vue";
 import AboutComponent from "@/components/home/About.component.vue";
 import OurServicesComponent from "@/components/home/OurServices.component.vue";
@@ -29,6 +33,8 @@ import WOW from "wow.js";
 export default {
   name: "HomeView",
   components: {
+    Navbare,
+
     LandingComponent,
     AboutComponent,
     OurServicesComponent,
@@ -42,7 +48,7 @@ export default {
   },
 
   created() {
-    this.$store.commit("setPage", "contact");
+    this.$store.commit("setPage", "home");
 
     window.scrollTo({
       top: 0,

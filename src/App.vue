@@ -1,5 +1,5 @@
 <template>
-  <Navbare></Navbare>
+  <!-- <Navbare></Navbare> -->
   <router-view />
   <Footer></Footer>
 </template>
@@ -9,12 +9,12 @@ import Icons from "uikit/dist/js/uikit-icons";
 import UIkit from "uikit";
 UIkit.use(Icons);
 
-import Navbare from "@/components/layouts/Navbar.vue";
+// import Navbare from "@/components/layouts/Navbar.vue";
 import Footer from "@/components/layouts/Footer.vue";
 export default {
   name: "App",
   components: {
-    Navbare,
+    // Navbare,
     Footer,
   },
 };

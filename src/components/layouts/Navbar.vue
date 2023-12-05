@@ -1,10 +1,5 @@
 <template>
-  <div
-    :class="[
-      { 'navbar-scrolled': isScrolled },
-      { 'navbar-bg': currentPage === 'Home' },
-    ]"
-  >
+  <div :class="['navbar-bg', { 'navbar-scrolled': isScrolled }]">
     <div class="container">
       <nav class="navbar navbar-expand-lg">
         <img class="navbar-brand" src="../../assets/logo-impact.svg" alt="" />
@@ -73,7 +68,6 @@
   box-shadow: 0 0 2px (#aeaeae);
   position: fixed;
   transition: background-color 0.3s ease;
-  // background-color: #0c063255;
 
   .navbar {
     padding: 10px 0px 0px;
@@ -138,9 +132,7 @@
     border: 1px;
   }
 }
-.navbar-about {
-  background-color: brown !important;
-}
+
 @media (max-width: 575.98px) {
   .navbar {
     width: 100%;
@@ -205,7 +197,6 @@ export default {
   data() {
     return {
       isScrolled: false,
-      currentPage: "Home",
     };
   },
   created() {

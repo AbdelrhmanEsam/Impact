@@ -1,26 +1,29 @@
 <template>
+  <Navbare></Navbare>
   <div>
     <InfoPolicyComponent></InfoPolicyComponent>
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.navbar-bg {
+  background-color: #0c0632 !important;
+}
+</style>
 
 <script>
+import Navbare from "@/components/layouts/Navbar.vue";
 import InfoPolicyComponent from "@/components/policies/InfoPolicy.component.vue";
 
 export default {
   name: "InfoPolicyView",
   components: {
+    Navbare,
     InfoPolicyComponent,
   },
-  data() {
-    return {
-      currentPage: "InfoPolicy",
-    };
-  },
+
   created() {
-    this.$store.commit("setPage", "contact");
+    this.$store.commit("setPage", "InfoPolicy");
 
     window.scrollTo({
       top: 0,
