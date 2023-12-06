@@ -32,6 +32,7 @@ body {
 .container {
   display: block !important;
   width: 80% !important;
+  padding: 0% !important;
 }
 
 @media (min-width: 576px) {

@@ -4,26 +4,36 @@
       <div class="row">
         <div class="col-xl-4 col-md-12">
           <div class="news-text">
-            <p class="header-section wow animate__animated animate__bounceIn">
+            <p
+              class="header-section wow animate__animated animate__fadeIn animate__slower animate__delay-0s"
+            >
               الأخبار
             </p>
-            <h1 class="header wow animate__animated animate__bounceIn">
+            <h1
+              class="header wow animate__animated animate__fadeIn animate__slower animate__delay-1s"
+            >
               اخبار تأثير +
             </h1>
-            <p class="header-desc wow animate__animated animate__bounceIn">
+            <p
+              class="header-desc wow animate__animated animate__fadeIn animate__slower animate__delay-2s"
+            >
               نحيطكم بتفاصيل رحلتنا المُلهمة لتكونوا معنا على اطلاع أول بأول بكل
               ماهو جديد لدينا...
             </p>
 
-            <div class="go-with-us wow animate__animated animate__bounceInUp">
+            <div
+              class="go-with-us wow animate__animated animate__bounceInUp animate__delay-3s"
+            >
               <p>المزيد من الأخبار</p>
               <img src="../../assets/icon_arrow-left.svg" />
             </div>
           </div>
         </div>
         <div class="col-xl-8 col-md-12">
-          <div class="news-imgs wow animate__animated animate__bounceInLeft">
-            <div class="card">
+          <div class="news-imgs">
+            <div
+              class="card wow animate__animated animate__fadeInDown animate__delay-1s animate__slower"
+            >
               <img src="../../assets/child.png" alt="" />
 
               <div class="desc">
@@ -37,11 +47,13 @@
                   class="go-with-us wow animate__animated animate__bounceInUp"
                 >
                   <img src="../../assets/icon_arrow-left.svg" />
-                  <p>المزيد من الأخبار</p>
+                  <p>تابع القراءة</p>
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div
+              class="card wow animate__animated animate__fadeInUp animate__delay-1s animate__slower"
+            >
               <img src="../../assets/child.png" alt="" />
 
               <div class="desc">
@@ -55,7 +67,7 @@
                   class="go-with-us wow animate__animated animate__bounceInUp"
                 >
                   <img src="../../assets/icon_arrow-left.svg" />
-                  <p>المزيد من الأخبار</p>
+                  <p>تابع القراءة</p>
                 </div>
               </div>
             </div>
@@ -139,11 +151,12 @@
       display: flex !important;
       flex-direction: row;
       padding: 40px 25px;
-      width: 100%;
+      width: 90%;
       height: 300px;
       margin: 10px 0px;
+      border-radius: 15px;
       img {
-        width: 200px;
+        width: 50%;
       }
       .desc {
         padding: 25px;
@@ -151,15 +164,19 @@
         flex-direction: column;
         justify-content: space-between;
         h3 {
-          color: #444;
+          color: #717171;
           font-size: 22px;
-          font-weight: 600;
+          font-weight: 400;
           line-height: 30px;
+          word-wrap: break-word;
+          font-family: "ArbFONTS-bold" !important;
         }
         p {
           color: #717171;
+          font-size: 17px;
           font-weight: 400;
           line-height: 23.5px;
+          word-wrap: break-word;
         }
         .go-with-us {
           display: flex;
@@ -196,13 +213,15 @@
       .card {
         flex-direction: column;
         height: auto;
-        text-align: center;
+        margin: 10px auto;
+        text-align: justify;
         h3 {
           text-align: justify;
           letter-spacing: 0cap;
         }
         img {
-          margin: auto;
+          margin: 10px auto;
+          width: 100%;
         }
         .go-with-us {
           text-align: center;
@@ -224,16 +243,19 @@
     }
     .news-imgs {
       padding: 0%;
+
       .card {
         flex-direction: column;
         height: auto;
-        text-align: center;
+        margin: auto;
+        text-align: justify;
         h3 {
           text-align: justify;
           letter-spacing: 0cap;
         }
         img {
-          margin: auto;
+          margin: 10px auto;
+          width: 100%;
         }
         .go-with-us {
           text-align: center;
@@ -244,14 +266,28 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .news-imgs {
+    .card {
+      width: 100% !important;
+      padding: 15px !important;
+      height: auto !important;
+    }
+  }
 }
 @media (min-width: 992px) and (max-width: 1479.98px) {
   .news {
     display: flex;
     flex-direction: column;
   }
-  .news .news-imgs .card .desc {
-    padding: 10px;
+  .news-imgs {
+    .card {
+      width: 100% !important;
+      padding: 20px !important;
+
+      .desc {
+        padding: 0px 20px !important;
+      }
+    }
   }
 }
 @media (min-width: 1480px) and (max-width: 1900px) {

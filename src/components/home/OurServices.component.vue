@@ -1,21 +1,25 @@
 <template>
   <section class="our-services" id="our-services">
     <div class="container">
-      <p class="header-section wow animate__animated animate__bounceIn">
+      <p
+        class="header-section wow animate__animated animate__fadeIn animate__slower animate__delay-0s"
+      >
         خدماتنا
       </p>
-      <h1 class="header wow animate__animated animate__bounceIn">
+      <h1
+        class="header wow animate__animated animate__fadeIn animate__slower animate__delay-1s"
+      >
         كل شيء معنا ممكن
       </h1>
       <div class="cards">
         <div uk-slider>
           <div
-            class="uk-position-relative uk-visible-toggle uk-light mb-5"
+            class="uk-position-relative uk-visible-toggle uk-light mb-5 wow animate__animated animate__bounceInLeft animate__slower"
             tabindex="-1"
             uk-slider
           >
             <ul
-              class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-4@xl uk-grid wow animate__animated animate__bounceInLeft"
+              class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-4@xl uk-grid"
             >
               <li>
                 <div class="uk-panel">
@@ -26,9 +30,9 @@
                       والشاشات
                     </h2>
                     <p class="card-desc">
-                      نسعى الى تحقيق أهدافنا المتمثلة في رفع مستوى المعارض
-                      والمؤتمرات والفعاليات وكافة الخدمات المقدمة في هذا المجال
-                      من خلال تحقيق أهداف عملائنا.
+                      نصمم ونجهز الأجنحة والمنصات بأحدث تقنيات الإضاءة والأنظمة
+                      الصوتية والشاشات بفضل فريقنا من المهندسيين والفنيين
+                      الخبراء لنضمن لك فعالية بأفضل جودة تقنية.
                     </p>
                   </div>
                 </div>
@@ -36,16 +40,16 @@
 
               <li>
                 <div class="uk-panel">
-                  <div class="card active">
-                    <img class="card-icon" src="../../assets/s-2.svg" />
+                  <div class="card">
+                    <img class="card-icon" src="../../assets/busss.svg" />
                     <h2 class="card-header">
-                      توفير الخدمات اللوجستية والإقامة والنقل للمشاركين في
-                      الفعاليات والمؤتمرات
+                      الخدمات اللوجستية والإقامة والنقل للمشاركين في الفعاليات
+                      والمؤتمرات
                     </h2>
                     <p class="card-desc">
-                      نسعى الى تحقيق أهدافنا المتمثلة في رفع مستوى المعارض
-                      والمؤتمرات والفعاليات وكافة الخدمات المقدمة في هذا المجال
-                      من خلال تحقيق أهداف عملائنا.
+                      نقدم خدمات النقل الفردي والجماعي والإقامة بالتعاون مع
+                      شركائنا من الفنادق في جميع أنحاء المملكة لنقدم تجربة مريحة
+                      للمشاركين في الفعاليات.
                     </p>
                   </div>
                 </div>
@@ -60,9 +64,9 @@
                       الإلكتروني
                     </h2>
                     <p class="card-desc">
-                      نسعى الى تحقيق أهدافنا المتمثلة في رفع مستوى المعارض
-                      والمؤتمرات والفعاليات وكافة الخدمات المقدمة في هذا المجال
-                      من خلال تحقيق أهداف عملائنا.
+                      نستخدم تقنياتنا المتكاملة لتصميم المواقع الإلكترونية
+                      والتطبيقات وإدارة قواعد بيانات الفعاليات لتحصل على الحلول
+                      التقنية والمواقع والتطبيقات لدعم الفعاليات والمؤتمرات.
                     </p>
                   </div>
                 </div>
@@ -74,10 +78,9 @@
                     <img class="card-icon" src="../../assets/s-4.svg" />
                     <h2 class="card-header">خدمات التسويق الرقمي</h2>
                     <p class="card-desc">
-                      أحدث الطرق والإستراتيجيات في إدارة صفحات منصات التواصل
-                      الإجتماعي من صناعة وكتابة المحتوى الإبداعي والتصميم
-                      والإعلانات وغيرها من الخدمات التي تساعدك على زيادة الوعي
-                      بعلامتك.
+                      نقدم أحدث استراتيجيات وأدوات التسويق لفعالياتك مثل التعاون
+                      مع المؤثرين وتهيئة محركات البحث وإدارة منصات التواصل
+                      الاجتماعي للوصول لأكبر عدد من المشاركين.
                     </p>
                   </div>
                 </div>
@@ -100,7 +103,7 @@
 
         <div uk-slider>
           <div
-            class="uk-position-relative uk-visible-toggle uk-light mb-5 wow animate__animated animate__bounceInRight"
+            class="uk-position-relative uk-visible-toggle uk-light mb-5 wow animate__animated animate__bounceInRight animate__slower"
             tabindex="-1"
             uk-slider
           >
@@ -115,9 +118,9 @@
                       توفير الخدمات المتعلقة بتأمين الفعاليات والمؤتمرات
                     </h2>
                     <p class="card-desc">
-                      نسعى الى تحقيق أهدافنا المتمثلة في رفع مستوى المعارض
-                      والمؤتمرات والفعاليات وكافة الخدمات المقدمة في هذا المجال
-                      من خلال تحقيق أهداف عملائنا.
+                      نلتزم بالجودة العالية لتلبية احتياجات عملاءنا، نعمل مع
+                      فريق من الخبراء الأمنيين لحماية الأفراد والموارد ولنضمن
+                      نجاح وسلامة كل الفعاليات.
                     </p>
                   </div>
                 </div>
@@ -129,9 +132,9 @@
                     <img class="card-icon" src="../../assets/s-6.svg" />
                     <h2 class="card-header">التصوير والمونتاج وتوثيق الحدث</h2>
                     <p class="card-desc">
-                      نسعى الى تحقيق أهدافنا المتمثلة في رفع مستوى المعارض
-                      والمؤتمرات والفعاليات وكافة الخدمات المقدمة في هذا المجال
-                      من خلال تحقيق أهداف عملائنا.
+                      نقوم بأقوى تغطية إعلامية للفعاليات من حيث التصوير
+                      الفوتوغرافي وإنتاج مقاطع الفيديو والأفلام القصيرة لتغطية
+                      وتوثيق كل أحداث الفعاليات لحظة بلحظة.
                     </p>
                   </div>
                 </div>
@@ -145,9 +148,9 @@
                       خدمات التصميم وبناء الهوية البصرية
                     </h2>
                     <p class="card-desc">
-                      نسعى الى تحقيق أهدافنا المتمثلة في رفع مستوى المعارض
-                      والمؤتمرات والفعاليات وكافة الخدمات المقدمة في هذا المجال
-                      من خلال تحقيق أهداف عملائنا.
+                      نبني مع فريقنا من المصممين هوية بصرية تعكس علامتك التجارية
+                      وجوهر الفعالية كما نقوم بتصميم الشعار وتطوير هوية العلامة
+                      التجارية وإعداد التصاميم التسويقية.
                     </p>
                   </div>
                 </div>
@@ -159,9 +162,9 @@
                     <img class="card-icon" src="../../assets/s-8.svg" />
                     <h2 class="card-header">خدمات الدعاية والإعلان للحدث</h2>
                     <p class="card-desc">
-                      نسعى الى تحقيق أهدافنا المتمثلة في رفع مستوى المعارض
-                      والمؤتمرات والفعاليات وكافة الخدمات المقدمة في هذا المجال
-                      من خلال تحقيق أهداف عملائنا.
+                      نخطط وننفذ الحملات الإعلانية وننتج المحتوى التسويقي عالي
+                      الجودة كما نبني تعاون مشترك مع وسائل الإعلام لضمان نجاح
+                      حملاتك الإعلامية وجذب انتباه الجمهور إلى فعالياتك.
                     </p>
                   </div>
                 </div>
@@ -183,7 +186,9 @@
         </div>
       </div>
 
-      <div class="go-with-us wow animate__animated animate__bounceInUp">
+      <div
+        class="go-with-us wow animate__animated animate__bounceInUp animate__slower"
+      >
         <p>اطلب خدماتنا</p>
         <img src="../../assets/white-left.svg" />
       </div>
@@ -194,6 +199,7 @@
 @import "../../scss/variables.scss";
 @import "https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css";
 
+$padding: 1em;
 .our-services {
   width: 100%;
   clear: both;
@@ -223,50 +229,60 @@
     }
   }
 
+  li {
+    padding: 0px 5px;
+  }
   .cards {
     width: 100%;
     margin-top: 50px;
     // justify-content: ``;
+
     .card {
-      padding: 20px;
-      background: none;
+      padding: 20px 40px;
       height: 500px;
       justify-content: center;
-      border-width: 2px;
-      border-style: solid;
-      border-image-source: linear-gradient(
-        to top,
-        #430e44 0%,
-        #120325 50%,
-        #ffffff90 100%
-      );
-      border-radius: 20px !important;
-      border-image-slice: 1;
+      border-radius: 20px;
+      background: transparent;
+
+      justify-content: flex-start;
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 20px;
+        padding: 3px;
+        // background: linear-gradient(0deg, #2c0a2c, #512787, #ffffff90);
+        background: linear-gradient(0deg, #ec4d4d36, #b52df440, #ffffff);
+
+        -webkit-mask: linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+      }
       .card-icon {
         width: 40px;
         height: 40px;
         margin: 25px 0px;
       }
       .card-header {
-        color: #848484;
-        font-size: 22px;
-        font-weight: 700;
-        line-height: 30px;
-        // margin: auto 0px;
         padding: 10px 0px 10px 10px !important;
-        background: none;
-        border: none;
+
+        color: #848484;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        font-family: "ArbFONTS-bold" !important;
       }
       .card-desc {
         color: #848484;
         font-size: 15px;
         font-weight: 400;
-        line-height: 25px;
-        margin: 15px 0px;
-        // text-align: justify;
+        line-height: 23.5px;
+        word-wrap: break-word;
+        margin: 20px 0px;
       }
       &:hover {
-        background-image: url(../../assets/bus-pic.jpg) !important;
+        background-image: url(../../assets/3.jpg) !important;
         background-position: bottom;
         min-height: 400px;
         transition: $main-transition ease-in-out;
@@ -306,6 +322,7 @@
       color: white;
       font-size: 22px;
       font-weight: 400;
+      font-family: "ArbFONTS-bold" !important;
     }
     img {
       width: 30px;
@@ -315,12 +332,17 @@
   }
 }
 @media (max-width: 575.98px) {
-  .our-services h1.header {
-    font-size: 25px !important;
-  }
+  .our-services {
+    padding: 40px 30px;
 
-  .card {
-    padding: 70px 20px !important;
+    margin: auto;
+    h1.header {
+      font-size: 25px !important;
+    }
+
+    .card {
+      padding: 70px 20px !important;
+    }
   }
 }
 
@@ -329,6 +351,10 @@
     font-size: 30px;
   }
   .cards {
+    li {
+      padding: 0% !important;
+      margin: 0px 2px;
+    }
     .card {
       height: 500px !important;
       padding: 20px 10px !important;
@@ -337,6 +363,10 @@
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .cards {
+    li {
+      padding: 0% !important;
+      margin: 0px 0px 0px 5px;
+    }
     .card {
       height: 500px !important;
       padding: 20px !important;
@@ -345,18 +375,23 @@
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .cards {
+    li {
+      padding: 0% !important;
+      margin: 0px !important;
+    }
     .card {
-      min-height: 600px !important;
+      min-height: 100% !important;
       width: 230px !important;
       width: 100%;
-      padding: 20px !important;
+      padding: 20px 10px !important;
     }
   }
 }
 @media (min-width: 1400px) and (max-width: 1900px) {
   .cards {
     .card {
-      padding: 50px 30px !important;
+      padding: 20px 30px !important;
+      min-height: 550px !important;
     }
   }
 }

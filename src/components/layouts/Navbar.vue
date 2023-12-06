@@ -76,8 +76,9 @@
     display: flex;
 
     .navbar-brand {
-      width: 150px;
+      width: auto;
       // height: 90%;
+      margin: 0%;
       padding: 10px 0px;
     }
     ul li {
@@ -106,9 +107,9 @@
       display: flex;
       margin: 7px;
       color: white;
-      width: 200px;
+      // width: 200px;
       span {
-        margin: 5px 0px;
+        margin: 8px;
       }
       img {
         margin: 0px !important;
@@ -126,10 +127,16 @@
     height: 80px;
   }
 
-  .whats img {
-    width: 50px;
-    height: 30px;
-    border: 1px;
+  .whats {
+    span {
+      margin: 5px;
+    }
+
+    img {
+      width: auto;
+      height: 30px;
+      border: 1px;
+    }
   }
 }
 

@@ -2,8 +2,14 @@
   <div class="main">
     <div class="container">
       <div class="desc">
-        <h1 class="first wow animate__animated animate__fadeIn">صناع</h1>
-        <h1 class="sec wow animate__animated animate__fadeOut">الحدث</h1>
+        <h1
+          class="first wow animate__animated animate__fadeInDown animate__slower"
+        >
+          صناع
+        </h1>
+        <h1 class="sec wow animate__animated animate__fadeInUp animate__slower">
+          الحدث
+        </h1>
       </div>
 
       <button class="btn contact-btn">
@@ -77,7 +83,7 @@
     width: 150px;
     height: 150px;
     position: absolute;
-    bottom: 0;
+    bottom: -8px;
     // background-color: $main-color;
     background: linear-gradient(
       180deg,

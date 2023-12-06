@@ -1,6 +1,8 @@
 <template>
   <footer>
-    <div class="head-footer wow animate__animated animate__bounceIn">
+    <div
+      class="head-footer wow animate__animated animate__fadeIn animate__slower"
+    >
       <h1>كُن معنا ليصلك جديدنا</h1>
       <img src="../../assets/shape.svg" alt="" />
       <p>
@@ -15,7 +17,10 @@
         <input type="text" placeholder="اكتب الإميل الإلكتروني" />
       </div>
     </div>
-    <div class="center-footer wow animate__animated animate__bounceInUp">
+
+    <div
+      class="center-footer wow animate__animated animate__fadeInUp animate__slower"
+    >
       <img class="logo-footer" src="../../assets/logo2mpact.svg" />
       <p>تابع تأثير + على وسائل التواصل الاجتماعي</p>
       <div class="icons">
@@ -24,6 +29,7 @@
         <img src="../../assets/whatsapp.svg" alt="" />
       </div>
     </div>
+
     <div class="copyright">
       <router-link to="/info-policies">
         <p>سياسة الخصوصية</p>
@@ -110,12 +116,14 @@ footer {
       font-size: 18px;
       font-family: Cairo;
       font-weight: 600;
+      margin: 0px;
     }
     .icons {
       display: flex;
       img {
         width: 20px;
         height: 20px;
+        margin: 0px 2px;
       }
     }
   }
@@ -127,7 +135,7 @@ footer {
     p {
       margin: 0px 50px;
       color: white;
-      font-size: 18px;
+      font-size: 14px;
       font-family: Cairo;
       font-weight: 600;
     }

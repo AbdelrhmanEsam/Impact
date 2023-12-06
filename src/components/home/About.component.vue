@@ -5,13 +5,15 @@
       <div class="row">
         <div class="about-impact">
           <div class="about-img">
-            <div class="about-header wow animate__animated animate__bounceIn">
+            <div
+              class="about-header wow animate__animated animate__fadeIn animate__delay-0s animate__slower"
+            >
               <h1>عن “تأثير +”</h1>
             </div>
             <img src="../../assets/man-pic.jpg" alt="" />
           </div>
-          <div class="about-text wow animate__animated animate__fadeOut">
-            <p>
+          <div class="about-text">
+            <p class="wow animate__animated animate__fadeIn animate__delay-1s">
               انطلقت شركة تأثير في مدينة الرياض في مجال تنظيم المعارض والمؤتمرات
               بكوادر بشرية مؤهلة ومتخصصة في مجال الفعاليات وشغوفة في هذا المجال
               ومنذ انطلاقتها قامت تأثير بتنظيم أحداث وفعاليات متعددة واستطاعت في
@@ -24,7 +26,9 @@
       <div class="about-company">
         <div class="row">
           <div class="col-md-6 col-12">
-            <div class="card wow animate__animated animate__bounceInRight">
+            <div
+              class="card wow animate__animated animate__fadeInDown animate__delay-1s animate__slower"
+            >
               <h1 class="header">فلسفة الشركة</h1>
               <p>
                 نسعى الى تحقيق أهدافنا المتمثلة في رفع مستوى المعارض والمؤتمرات
@@ -35,7 +39,9 @@
           </div>
 
           <div class="col-md-6 col-12">
-            <div class="card wow animate__animated animate__bounceInLeft">
+            <div
+              class="card last wow animate__animated animate__fadeInUp animate__delay-1s animate__slower"
+            >
               <h1 class="header">رؤية الشركة</h1>
               <p>
                 الريادة في الفعاليات والتسويق المبتكرة والمتجددة وإستخدام
@@ -46,9 +52,15 @@
         </div>
       </div>
 
-      <div class="go-with-us wow animate__animated animate__bounceInUp">
-        <p>نظم فعاليتك معنا</p>
-        <img src="../../assets/icon_arrow-left.svg" />
+      <div class="row">
+        <div class="col-12">
+          <div
+            class="go-with-us wow animate__animated animate__bounceInUp animate__slower"
+          >
+            <p>نظم فعاليتك معنا</p>
+            <img src="../../assets/icon_arrow-left.svg" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -63,6 +75,7 @@
   // height: 100vh !important;
   background: linear-gradient(85deg, #233a76 0%, #543c97 100%);
   z-index: 1 !important;
+  transition: all 0.6s ease-in-out;
 
   &::before {
     content: "";
@@ -115,8 +128,8 @@
       }
     }
     .about-text {
-      width: 60%;
-      padding: 50px;
+      width: 70%;
+      padding: 50px 50px 0px 0px;
       margin-top: 50px;
 
       p {
@@ -138,10 +151,11 @@
       background: none;
       border: none;
       height: 100%;
+
       .header {
         color: white;
         font-size: 35px;
-        font-weight: 400;
+        font-weight: 700;
         line-height: 159px;
         position: relative;
         &::after {
@@ -150,6 +164,7 @@
           width: 50px;
           height: 100px;
           left: 100%;
+          z-index: -1;
         }
         &::before {
           content: "";
@@ -167,12 +182,17 @@
         line-height: 39.5px;
       }
     }
+    .card.last {
+      margin: 0px 0px 0px 0px;
+    }
   }
   .go-with-us {
     display: flex;
     width: auto !important;
+
     height: 100px;
     p {
+      font-family: "ArbFONTS-bold" !important;
       color: $main-color-alt;
       font-size: 22px;
       font-weight: 400;

@@ -1,10 +1,12 @@
 <template>
   <div class="ask">
     <div class="container">
-      <p class="header-section wow animate__animated animate__bounceIn">
+      <p
+        class="header-section wow animate__animated animate__fadeIn animate__slower"
+      >
         الأسئلة
       </p>
-      <h1 class="header wow animate__animated animate__bounceIn">
+      <h1 class="header wow animate__animated animate__fadeIn animate__slower">
         لديك سؤال عن تأثير +
       </h1>
 
@@ -160,7 +162,9 @@
         </div>
       </div>
 
-      <div class="last wow animate__animated animate__bounceInUp">
+      <div
+        class="last wow animate__animated animate__bounceInUp animate__slower"
+      >
         <span>لديك استفسارات نسعد بلإجابه عليها</span>
         <div class="go-with-us">
           <p>تواصل معنا</p>
@@ -247,14 +251,16 @@
     border: 1px solid $main-color;
     border-radius: 50%;
     margin-left: 5px;
-    padding: 0px 5px;
+    padding: 2px 5px;
+    font-weight: bolder;
   }
   .accordion-button::after {
     border: 1px solid $main-color;
     content: "+";
     border-radius: 50%;
     margin-left: 5px;
-    padding: 0px 5px;
+    padding: 3px 4px;
+    font-weight: bolder;
   }
 
   .accordion-item {
@@ -309,8 +315,12 @@
 
 @media (max-width: 575.98px) {
   .ask {
+    .header-section {
+      margin: 10px 20px;
+    }
     .header {
       font-size: 25px;
+      margin: 10px 20px;
       &::before {
         right: 0%;
         margin: auto;

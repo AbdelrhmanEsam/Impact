@@ -1,7 +1,9 @@
 <template>
   <section class="two-impact">
     <div class="first">
-      <div class="text wow animate__animated animate__fadeInUp">
+      <div
+        class="text wow animate__animated animate__fadeInUp animate__delay-0s animate__slower"
+      >
         <h1 class="header">نمهد لك الطريق لتجربة فريدة يكون لها تأثير</h1>
         <p>
           “تأثير +” إحدى الشركات السعودية الرائدة في بناء وتنظيم وتجهيز
@@ -11,7 +13,9 @@
       </div>
     </div>
     <div class="sec">
-      <div class="text wow animate__animated animate__fadeInDown">
+      <div
+        class="text wow animate__animated animate__fadeInDown animate__delay-1s animate__slower"
+      >
         <h1 class="header">تعرّف علينا عن قرب</h1>
         <div class="cards">
           <div class="card">
@@ -75,7 +79,7 @@
         color: white;
         font-size: 50px;
         font-weight: 400;
-        line-height: 59px;
+        line-height: 100px;
         // margin-bottom: 50px;
         font-family: "ArbFONTS-bold" !important;
 
@@ -83,17 +87,19 @@
         &::before {
           content: url(../../assets/shape.svg);
           position: absolute;
-          top: 150px;
+          top: 220px;
           right: 25%;
         }
       }
       p {
-        color: rgba(255, 255, 255, 0.638);
-        font-size: 20px;
-        font-weight: 200;
-        line-height: 39.5px;
-        letter-spacing: 1px;
         width: 75%;
+
+        color: white;
+        font-size: 20px;
+        font-family: FF Shamel Family;
+        font-weight: 400;
+        line-height: 39.5px;
+        word-wrap: break-word;
       }
       button {
         background: none;
@@ -102,8 +108,6 @@
         padding: 20px 40px;
         color: #da528a;
         &:hover {
-          // border: 1px solid $main-color;
-          // color: $main-color;
           border: 1px solid #fff;
           color: #fff;
           background-color: #da528a;
@@ -174,11 +178,17 @@
             }
           }
           p {
+            // color: white;
+            // font-size: 17px;
+            // font-weight: 200;
+            // line-height: 23.5px;
+            // // font-family: "ArbFONTS" !important;
+
             color: white;
             font-size: 17px;
-            font-weight: 200;
+            font-weight: 400;
             line-height: 23.5px;
-            font-family: "ArbFONTS-bold" !important;
+            word-wrap: break-word;
           }
         }
       }
@@ -198,8 +208,9 @@
         .header {
           font-size: 25px !important;
           margin-bottom: 50px !important;
+          line-height: 50px !important;
           &::before {
-            top: 120px !important;
+            top: 130px !important;
             right: 50%;
             transform: translate(50%);
 
@@ -221,6 +232,7 @@
         .header {
           font-size: 22px !important;
           margin: 0px !important;
+
           &::before {
             margin: auto;
           }
@@ -263,8 +275,10 @@
         .header {
           font-size: 35px !important;
           margin-bottom: 50px !important;
+          line-height: 50px !important;
+
           &::before {
-            top: 120px !important;
+            top: 150px !important;
 
             right: 50%;
             transform: translate(50%);
@@ -317,6 +331,7 @@
       .header {
         font-size: 35px !important;
         margin-bottom: 50px !important;
+        line-height: 50px !important;
         &::before {
           top: 180px !important;
           right: 10% !important;
@@ -331,7 +346,7 @@
       width: 100% !important;
 
       .header {
-        font-size: 35px !important;
+        font-size: 30px !important;
         margin-bottom: 50px !important;
         &::before {
           margin: auto;
@@ -355,13 +370,14 @@
       width: 100% !important;
 
       .header {
-        font-size: 45px !important;
+        font-size: 40px !important;
         margin-bottom: 50px !important;
+        line-height: 50px !important;
+
         &::before {
-          top: 180px !important;
-          // right: 10% !important;
-          width: auto !important;
-          margin: auto;
+          top: 200px !important;
+          right: 50%;
+          transform: translate(-0%);
         }
       }
     }
@@ -371,7 +387,7 @@
       width: 100% !important;
 
       .header {
-        font-size: 45px !important;
+        font-size: 40px !important;
         margin-bottom: 50px !important;
         &::before {
           margin: auto;
@@ -381,6 +397,13 @@
   }
 }
 @media (min-width: 1480px) and (max-width: 1900px) {
+  .first {
+    .text {
+      .header {
+        font-size: 42px !important;
+      }
+    }
+  }
 }
 </style>
 

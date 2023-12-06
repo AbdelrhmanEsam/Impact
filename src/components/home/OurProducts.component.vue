@@ -1,9 +1,11 @@
 <template>
   <div class="Our-products" id="our-products">
-    <p class="header-section wow animate__animated animate__bounceIn">
+    <p
+      class="header-section wow animate__animated animate__fadeIn animate__delay-0s"
+    >
       أعمالنا
     </p>
-    <h1 class="header wow animate__animated animate__bounceIn">
+    <h1 class="header wow animate__animated animate__fadeIn animate__delay-1s">
       حيث تكتمل دائرة الإبداع لتحقق أهدافكم
     </h1>
 
@@ -19,44 +21,136 @@
             class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-5@l uk-child-width-1-5@xl uk-grid"
           >
             <li>
-              <div
-                class="uk-panel wow animate__animated animate__fadeInLeft"
-              ></div>
-            </li>
-            <li>
-              <div
-                class="uk-panel wow animate__animated animate__fadeInLeft"
-              ></div>
-            </li>
-            <li>
-              <div
-                class="uk-panel active wow animate__animated animate__fadeInUp"
-              >
-                <div class="date">
-                  <img src="../../assets/icon-calendar.svg" alt="" />
-                  <span>10/3/2023</span>
-                </div>
-                <div>
-                  <h2 class="card-header">عنوان البطولة هنا</h2>
-                  <p class="card-desc">
-                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
-                    هذا النص أو العديد من النصوص الأخرى
-                  </p>
+              <div class="uk-panel wow animate__animated animate__fadeInUp">
+                <div class="data">
+                  <div class="date">
+                    <img src="../../assets/icon-calendar.svg" alt="" />
+                    <span>10/3/2023</span>
+                  </div>
+                  <div>
+                    <h2 class="card-header">عنوان البطولة هنا</h2>
+                    <p class="card-desc">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                      توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                      هذا النص أو العديد من النصوص الأخرى
+                    </p>
+                  </div>
                 </div>
               </div>
             </li>
 
             <li>
-              <div
-                class="uk-panel wow animate__animated animate__fadeInRight"
-              ></div>
+              <div class="uk-panel wow animate__animated animate__fadeInUp">
+                <div class="data">
+                  <div class="date">
+                    <img src="../../assets/icon-calendar.svg" alt="" />
+                    <span>10/3/2023</span>
+                  </div>
+                  <div>
+                    <h2 class="card-header">عنوان البطولة هنا</h2>
+                    <p class="card-desc">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                      توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                      هذا النص أو العديد من النصوص الأخرى
+                    </p>
+                  </div>
+                </div>
+              </div>
             </li>
 
             <li>
-              <div
-                class="uk-panel wow animate__animated animate__fadeInRight"
-              ></div>
+              <div class="uk-panel wow animate__animated animate__fadeInUp">
+                <div class="data">
+                  <div class="date">
+                    <img src="../../assets/icon-calendar.svg" alt="" />
+                    <span>10/3/2023</span>
+                  </div>
+                  <div>
+                    <h2 class="card-header">عنوان البطولة هنا</h2>
+                    <p class="card-desc">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                      توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                      هذا النص أو العديد من النصوص الأخرى
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="uk-panel wow animate__animated animate__fadeInUp">
+                <div class="data">
+                  <div class="date">
+                    <img src="../../assets/icon-calendar.svg" alt="" />
+                    <span>10/3/2023</span>
+                  </div>
+                  <div>
+                    <h2 class="card-header">عنوان البطولة هنا</h2>
+                    <p class="card-desc">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                      توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                      هذا النص أو العديد من النصوص الأخرى
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="uk-panel wow animate__animated animate__fadeInUp">
+                <div class="data">
+                  <div class="date">
+                    <img src="../../assets/icon-calendar.svg" alt="" />
+                    <span>10/3/2023</span>
+                  </div>
+                  <div>
+                    <h2 class="card-header">عنوان البطولة هنا</h2>
+                    <p class="card-desc">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                      توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                      هذا النص أو العديد من النصوص الأخرى
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="uk-panel wow animate__animated animate__fadeInUp">
+                <div class="data">
+                  <div class="date">
+                    <img src="../../assets/icon-calendar.svg" alt="" />
+                    <span>10/3/2023</span>
+                  </div>
+                  <div>
+                    <h2 class="card-header">عنوان البطولة هنا</h2>
+                    <p class="card-desc">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                      توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                      هذا النص أو العديد من النصوص الأخرى
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="uk-panel wow animate__animated animate__fadeInUp">
+                <div class="data">
+                  <div class="date">
+                    <img src="../../assets/icon-calendar.svg" alt="" />
+                    <span>10/3/2023</span>
+                  </div>
+                  <div>
+                    <h2 class="card-header">عنوان البطولة هنا</h2>
+                    <p class="card-desc">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                      توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                      هذا النص أو العديد من النصوص الأخرى
+                    </p>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -65,6 +159,7 @@
           <a
             class="uk-position-center-left uk-position-small uk-light uk-visible"
             uk-slidenav-next
+            uk-slider-item="next"
           >
           </a>
         </div>
@@ -72,6 +167,7 @@
           <a
             class="uk-position-center-right uk-position-small uk-light uk-visible"
             uk-slidenav-previous
+            uk-slider-item="previous"
           ></a>
           <!-- uk-slider-item="previous" -->
         </div>
@@ -84,7 +180,6 @@
 @import "https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css";
 
 .Our-products {
-  // min-height: 800px;
   min-height: 100vh !important;
 
   clear: both;
@@ -119,55 +214,70 @@
   .uk-panel {
     padding: 50px;
     height: 450px;
-    margin: 50px 0px 0px;
+    margin: 50px 10px;
     background-image: url(../../assets/cars.png);
     background-repeat: round;
-    border-radius: 20px !important;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 15px;
+    border-radius: 10px !important;
+    padding: 50px;
+    // transition: all 0.1s ease;
 
-    .card-header {
-      color: white;
-      font-size: 25px;
-      // font-family: FF Shamel Family;
-      font-weight: 400;
-      position: relative;
-      margin: 50px auto;
-      &::after {
-        content: "";
-        width: 70px;
-        height: 2px;
-        background-color: aqua;
-        position: absolute;
-        right: 0%;
-        bottom: -50% !important;
+    .data {
+      height: 98%;
+      text-align: justify;
+      // display: none;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .date {
+        background-color: #00000080;
+        width: max-content;
+        display: flex;
+        border-radius: 20px;
+        color: white;
+        padding: 10px;
+
+        img {
+          width: 20px;
+          margin: 0px 0px 0px 5px;
+        }
+        span {
+          height: 0px;
+          margin: 2px 5px;
+        }
+      }
+      .card-header {
+        color: white;
+        font-size: 25px;
+        font-weight: 400;
+        position: relative;
+        margin: 50px auto;
+        &::after {
+          content: "";
+          width: 70px;
+          height: 2px;
+          background-color: aqua;
+          position: absolute;
+          right: 0%;
+          bottom: -50% !important;
+        }
+      }
+      .card-desc {
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
       }
     }
-    .card-desc {
-      color: white;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 24px;
-    }
-  }
-  .uk-panel.active {
-    height: 550px;
-    margin-top: -10px;
-    background-image: url(../../assets/car-pic2.jpg);
-    .date {
-      background-color: #00000080;
-      width: max-content;
-      display: flex;
-      border-radius: 20px;
-      color: white;
-      padding: 10px;
-      img {
-        width: 20px;
-        height: 20px;
-        margin: 0px 0px 0px 5px;
+
+    &:hover {
+      cursor: pointer;
+      padding: 20px;
+
+      transform: scale(1.2);
+      background-image: url(../../assets/car-pic2.jpg);
+      .data {
+        visibility: visible;
       }
     }
   }
@@ -209,6 +319,12 @@
         transform: translate(50%);
       }
     }
+
+    .uk-panel {
+      &:hover {
+        transform: scaleY(1.2);
+      }
+    }
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -228,6 +344,11 @@
       font-size: 35px;
       &::before {
         right: 35%;
+      }
+    }
+    .uk-panel {
+      &:hover {
+        transform: scaleY(1.2);
       }
     }
   }

@@ -1,15 +1,19 @@
 <template>
   <div class="sponser" id="sponsers">
-    <p class="header-section wow animate__animated animate__bounceIn">
+    <p
+      class="header-section wow animate__animated animate__bounceIn animate__delay-0s"
+    >
       شركاؤنا
     </p>
-    <h1 class="header wow animate__animated animate__bounceIn">
+    <h1
+      class="header wow animate__animated animate__bounceIn animate__delay-1s"
+    >
       بثقتهم يزدهر الإبداع
     </h1>
 
     <div uk-slider>
       <div
-        class="uk-position-relative uk-visible-toggle uk-light mb-5 wow animate__animated animate__fadeInLeft"
+        class="uk-position-relative uk-visible-toggle uk-light mb-5 wow animate__animated animate__fadeInDown animate__slower animate__delay-1s"
         tabindex="-1"
         uk-slider
       >
@@ -74,7 +78,7 @@
 
     <div uk-slider>
       <div
-        class="uk-position-relative uk-visible-toggle uk-light mb-5 wow animate__animated animate__fadeInRight"
+        class="uk-position-relative uk-visible-toggle uk-light mb-5 wow animate__animated animate__fadeInDown animate__slower animate__delay-2s"
         tabindex="-1"
         uk-slider
       >
@@ -153,6 +157,7 @@
   text-align: center;
   overflow: hidden;
   min-height: 100vh !important;
+  position: relative;
   .header-section {
     @include header-section;
     margin: auto;
@@ -178,7 +183,7 @@
   ul {
     display: flex;
     align-items: center;
-    opacity: 0.5;
+    opacity: 0.8;
   }
   .uk-panel {
     // padding: 50px;
@@ -191,6 +196,36 @@
       // width: 100%;
       height: 100%;
     }
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 85%;
+    z-index: 1;
+  }
+
+  &::before {
+    left: 0;
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    );
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    );
   }
 }
 
